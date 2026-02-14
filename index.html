@@ -579,8 +579,8 @@
             50% { box-shadow: 0 0 35px #FF69B4; }
         }
 
-        /* Hair */
-        .rapunzel-hair-top {
+        /*  */
+        .rapunzel--top {
             position: absolute;
             top: 10px;
             left: 50%;
@@ -593,7 +593,7 @@
             box-shadow: 0 5px 25px rgba(255, 215, 0, 0.3);
         }
 
-        .hair-highlight {
+        .-highlight {
             position: absolute;
             top: 20px;
             left: 30px;
@@ -603,7 +603,7 @@
             border-radius: 50%;
         }
 
-        .hair-strand-left, .hair-strand-right {
+        .-strand-left, .-strand-right {
             position: absolute;
             top: 50px;
             width: 40px;
@@ -613,12 +613,12 @@
             animation: strandFlow 3.5s ease-in-out infinite;
         }
 
-        .hair-strand-left {
+        .-strand-left {
             left: 0;
             transform-origin: top center;
         }
 
-        .hair-strand-right {
+        .-strand-right {
             right: 0;
             transform-origin: top center;
             animation-delay: 1.2s;
@@ -630,13 +630,13 @@
             75% { transform: rotate(12deg); }
         }
 
-        /* Flowers in hair */
-        .hair-flower {
+        /* Flowers in  */
+        .-flower {
             position: absolute;
             z-index: 15;
         }
 
-        .hair-flower .flower-center {
+        .-flower .flower-center {
             width: 18px;
             height: 18px;
             background: radial-gradient(circle, #FFD700 0%, #FFA500 100%);
@@ -644,7 +644,7 @@
             position: relative;
         }
 
-        .hair-flower .petal {
+        .-flower .petal {
             position: absolute;
             width: 20px;
             height: 20px;
@@ -661,9 +661,9 @@
         .petal-5 { transform: translate(30%, 20%); }
         .petal-6 { transform: translate(30%, -80%); }
 
-        .hair-flower:nth-child(1) { top: 35px; left: 25px; }
-        .hair-flower:nth-child(2) { top: 45px; right: 30px; }
-        .hair-flower:nth-child(3) { top: 70px; left: 15px; }
+        .-flower:nth-child(1) { top: 35px; left: 25px; }
+        .-flower:nth-child(2) { top: 45px; right: 30px; }
+        .-flower:nth-child(3) { top: 70px; left: 15px; }
 
         /* Face */
         .rapunzel-head {
@@ -864,8 +864,8 @@
             transform: rotate(-30deg);
         }
 
-        /* Hair Braid */
-        .hair-braid {
+        /*  Braid */
+        .-braid {
             position: absolute;
             top: 140px;
             left: 50%;
@@ -878,7 +878,7 @@
             z-index: 5;
         }
 
-        .hair-tie {
+        .-tie {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -890,8 +890,8 @@
             z-index: 6;
         }
 
-        .hair-tie::before,
-        .hair-tie::after {
+        .-tie::before,
+        .-tie::after {
             content: '';
             position: absolute;
             top: -5px;
@@ -902,8 +902,8 @@
             box-shadow: 0 0 10px var(--pink);
         }
 
-        .hair-tie::before { left: -15px; }
-        .hair-tie::after { right: -15px; }
+        .-tie::before { left: -15px; }
+        .-tie::after { right: -15px; }
 
         /* Memory Photos */
         .memory-photo {
@@ -982,10 +982,10 @@
             transform: translateX(60px) translateY(-125px) rotate(5deg) !important;
         }
 
-        .hair-tie:nth-child(1) { top: 230px; }
-        .hair-tie:nth-child(2) { top: 450px; }
-        .hair-tie:nth-child(3) { top: 670px; }
-        .hair-tie:nth-child(4) { top: 890px; }
+        .-tie:nth-child(1) { top: 230px; }
+        .-tie:nth-child(2) { top: 450px; }
+        .-tie:nth-child(3) { top: 670px; }
+        .-tie:nth-child(4) { top: 890px; }
 
         .flower {
             position: absolute;
@@ -1065,12 +1065,12 @@
                 height: 12px;
             }
 
-            .rapunzel-hair-top {
+            .rapunzel--top {
                 width: 130px;
                 height: 65px;
             }
 
-            .hair-strand-left, .hair-strand-right {
+            .-strand-left, .-strand-right {
                 width: 32px;
                 height: 100px;
             }
@@ -1153,7 +1153,7 @@
                 height: 14px;
             }
 
-            .hair-braid {
+            .-braid {
                 height: 900px;
                 width: 35px;
                 top: 115px;
@@ -1171,7 +1171,7 @@
             .memory-photo:nth-child(7) { top: 780px; }
             .memory-photo:nth-child(8) { top: 880px; }
 
-            .hair-tie { width: 45px; }
+            .-tie { width: 45px; }
 
             .flower { font-size: 20px; }
 
@@ -1363,7 +1363,7 @@
                 </div>
             </div>
 
-            <!-- Rapunzel with Memory Hair Section -->
+            <!-- Rapunzel with Memory  Section -->
             <div class="rapunzel-section">
                 <h2 class="rapunzel-title">✨ Our Memory Journey ✨</h2>
                 <p class="rapunzel-subtitle">Seperti rambut Rapunzel, kenangan kita terus tumbuh panjang</p>
@@ -1378,16 +1378,16 @@
                             <span class="crown-gem"></span>
                         </div>
 
-                        <!-- Hair -->
-                        <div class="rapunzel-hair-top">
-                            <div class="hair-highlight"></div>
+                        <!--  -->
+                        <div class="rapunzel--top">
+                            <div class="-highlight"></div>
                         </div>
                         
-                        <div class="hair-strand-left"></div>
-                        <div class="hair-strand-right"></div>
+                        <div class="-strand-left"></div>
+                        <div class="-strand-right"></div>
 
                         <!-- Flowers -->
-                        <div class="hair-flower">
+                        <div class="-flower">
                             <div class="petal petal-1"></div>
                             <div class="petal petal-2"></div>
                             <div class="petal petal-3"></div>
@@ -1396,7 +1396,7 @@
                             <div class="petal petal-6"></div>
                             <div class="flower-center"></div>
                         </div>
-                        <div class="hair-flower">
+                        <div class="-flower">
                             <div class="petal petal-1"></div>
                             <div class="petal petal-2"></div>
                             <div class="petal petal-3"></div>
@@ -1405,7 +1405,7 @@
                             <div class="petal petal-6"></div>
                             <div class="flower-center"></div>
                         </div>
-                        <div class="hair-flower">
+                        <div class="-flower">
                             <div class="petal petal-1"></div>
                             <div class="petal petal-2"></div>
                             <div class="petal petal-3"></div>
@@ -1459,12 +1459,12 @@
                         </div>
                     </div>
 
-                    <!-- Hair Braid -->
-                    <div class="hair-braid">
-                        <div class="hair-tie"></div>
-                        <div class="hair-tie"></div>
-                        <div class="hair-tie"></div>
-                        <div class="hair-tie"></div>
+                    <!--  Braid -->
+                    <div class="-braid">
+                        <div class="-tie"></div>
+                        <div class="-tie"></div>
+                        <div class="-tie"></div>
+                        
                     </div>
 
                     <!-- Memory Photos -->
